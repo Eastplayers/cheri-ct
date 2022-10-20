@@ -36,7 +36,7 @@ const profile = [
 const product = [
     {
         value: "Sản phẩm đã xem",
-        icon: "show",
+        icon: "eye",
         content: "Sản phẩm đã xem"
     },
     {

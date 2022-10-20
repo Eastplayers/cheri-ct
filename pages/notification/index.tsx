@@ -33,7 +33,7 @@ const Notification = () => {
 
     return (
         <>
-        <NotificationPopup notilist={itemlist}></NotificationPopup>
+        <NotificationPopup notilist={itemlist}/>
         <ColumnLayout >
             <NotificationBox></NotificationBox>
         </ColumnLayout>
