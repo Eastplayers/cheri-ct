@@ -14,6 +14,7 @@ import SectionLayout from "../../components/SectionLayout/SectionLayout";
 import Carousel from "../../components/Carousel/Carousel";
 import ProductPanel from "../../components/ProductPanel/ProductPanel";
 import FilterMenu from "../../components/FilterMenu/FilterMenu";
+import ProductShowcase from "../../components/ProductShowcase/ProductShowcase";
 
 const bannerItem = [
   {
@@ -226,10 +227,11 @@ const ProductListing: NextPage = () => {
         </div>
           
         <SectionLayout 
-          title="Deal" 
+          title="Deal sale 11-11" 
           show={true} 
           showAll={false} 
-          containerClassname="container"
+          childrenClassName={styles.children}
+          containerClassname={classNames("container", styles.first_layout)}
         >
           <Carousel responsive={productPanelResponsive} show={true}>
             {listItem.map((item: any, index: any) => (
@@ -241,10 +243,11 @@ const ProductListing: NextPage = () => {
         </SectionLayout>
 
         <SectionLayout 
-          title="Deal" 
+          title="Deal sale 11-11" 
           show={true} 
           showAll={false} 
-          containerClassname="container"
+          childrenClassName={styles.children}
+          containerClassname={classNames("container", styles.second_layout)}
         >
           <Carousel responsive={productPanelResponsive} show={true}>
             {listItem.map((item: any, index: any) => (
@@ -256,7 +259,7 @@ const ProductListing: NextPage = () => {
         </SectionLayout>
 
         <SectionLayout
-          title="Test"
+          title="Deal hot nổi bật"
           showAll={false}
           containerClassname="container"
           show={true}
@@ -268,9 +271,7 @@ const ProductListing: NextPage = () => {
             ))}
           </div>
         </SectionLayout>
-
       </div>
-      
       <Footer/>
     </div>
   )

@@ -17,6 +17,27 @@
   }
 }
 
+.first_layout {
+  background-color: $bg-light-pink;
+  border-radius: 16px;
+  .children {
+    background-color: white;
+    border-radius: 16px;
+    padding: 18px 0;
+  }
+}
+
+
+.second_layout {
+  background-color: $bg-mint;
+  border-radius: 16px;
+  .children {
+    background-color: white;
+    border-radius: 16px;
+    padding: 18px 0;
+  }
+}
+
 @media (max-width: $medium-tablet) {
   .list_wrapper {
     gap: 6px;

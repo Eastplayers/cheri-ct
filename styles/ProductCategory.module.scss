@@ -85,6 +85,28 @@
   .category_section {
     display: none;
   }
+}
 
+@media (max-width: $mobile) {
+  .page_container {
+    .list_section {
+      .list_wrapper {
+        .list_panel {
+          width: calc(100% / 2 - 12px);
+        }
+      }
+    } 
+  }
+}
 
+@media (max-width: $small-mobile) {
+  .page_container {
+    .list_section {
+      .list_wrapper {
+        .list_panel {
+          width: 100%;
+        }
+      }
+    } 
+  }
 }
