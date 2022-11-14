@@ -1,0 +1,17 @@
+@import "styles/variables.scss";
+
+.list_product {
+  width: 750px;
+  padding: 11px 19px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (max-width: $tablet) {
+    width: 100%;
+    justify-content: space-around;
+  }
+  @media screen and (max-width: $mobile) {
+    padding: 5px;
+    justify-content: space-between;
+  }
+}

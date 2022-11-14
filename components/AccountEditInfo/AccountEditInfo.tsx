@@ -16,7 +16,7 @@ interface AccountEditInfoProps {
     name: string;
     phone: string;
     img: string;
-    // date?: Date;
+    date: Date | number;
   };
 }
 
@@ -28,7 +28,7 @@ const AccountEditInfo = (props: AccountEditInfoProps) => {
     img: string;
     name: string;
     phone: string;
-    // date?: Date;
+    date: Date | number;
   }>(personalInfo || {});
 
   const gender = [
@@ -94,6 +94,7 @@ const AccountEditInfo = (props: AccountEditInfoProps) => {
         <DatePicker
           variant="filled"
           suffixIcon={true}
+          value={data.date}
           className={classNames(styles.input, styles.date)}
         />
       </div>

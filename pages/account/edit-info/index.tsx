@@ -14,7 +14,7 @@ const EditInfo = () => {
       label: 'male',
       value: 'male',
     },
-    date: '12323',
+    date: Date.now(),
   };
 
   const addressData = [
@@ -29,10 +29,7 @@ const EditInfo = () => {
   return (
     <section id="account-edit-info">
       <ColumnLayout>
-        {/* <AccountEditInfo personalInfo={data} /> */}
-        {/* <AccountAddress address={addressData} /> */}
-        {/* <AccountAddressNotLogin/> */}
-        <AccountChangPassword/>
+        <AccountEditInfo personalInfo={data} />
       </ColumnLayout>
     </section>
   );
